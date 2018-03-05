@@ -1,0 +1,43 @@
+//
+//  PrefixHeader.pch
+//  MVVMNews
+//
+//  Created by ios开发 on 2018/1/23.
+//  Copyright © 2018年 ios开发. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+#import "Const.h"
+
+#import <BlocksKit.h>
+#import <BlocksKit+MessageUI.h>
+#import <BlocksKit+UIKit.h>
+
+#import <AFNetworking.h>
+#import "UIImageView+AFNetworking.h"
+//优秀的滚动视图头部和脚步刷新效果
+#import <MJRefresh.h>
+//优秀的Json解析类库
+#import <MJExtension.h>
+//实现安卓toast风格提示，弹出提示框架
+#import <MBProgressHUD.h>
+//纯代码书写AutoLayout的第三方类库（链式语法）
+#import <Masonry.h>
+
+#import <SDWebImage/SDWebImageManager.h>
+//优秀的替换NSLog的第三方，更加省资源
+#import <CocoaLumberjack.h>
+#ifdef DEBUG
+static const int LFLogLevel = DDLogLevelVerbose;
+#else
+static const int LFLogLevel = DDLogLevelError;
+#endif
+//提示显示的时间
+#define toastDuration 1
+//吐司封装
+#import "NSObject+Hint.h"
+#import "MyImageView.h"
+
+#endif /* PrefixHeader_pch */
